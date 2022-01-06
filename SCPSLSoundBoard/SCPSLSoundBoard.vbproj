@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C41E33D4-F834-4F6C-AD77-1608EE2CFAC1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SCPSLSoundBoard.My.MyApplication</StartupObject>
+    <RootNamespace>SCPSLSoundBoard</RootNamespace>
+    <AssemblyName>SCPSLSoundBoard</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SCPSLSoundBoard.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SCPSLSoundBoard.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>scp.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient1a.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient2a.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient3a.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient4a.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient5a.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient6a.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient7a.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient8.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient8a.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient9.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient10.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient11.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient12.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient13.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient14.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient15.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient17.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient18.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient19.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient20.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient21.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient22.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ambient23.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCP096Scream.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCP096Triggered.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCP106Contained.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCP106FemurBreaker.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCP106Footstep01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCP106Footstep02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCP106Footstep03.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCP173Footstep01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCP173Footstep02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCP173Footstep03.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCP173Snap01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCP173Snap02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCP173Snap03.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCP096IdleSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scare 0.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scare 1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scare 2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scare 3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scare 4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scare 5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scare 6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EMPGrenade.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OutOfAmmo.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReloadE11Rifle01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReloadE11Rifle02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReloadM249.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReloadMicroUzi.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReloadPistol.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShotE11Rifle.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShotMicroUzi.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShotmM249.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShotPistol.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmokeGrenade.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Canceled.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main80.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main90.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main100.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main110.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main120.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resume30.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resume40.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resume50.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resume60.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resume70.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resume80.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resume90.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resume100.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bell1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bell2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Broadcast2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Broadcast7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\falldamage.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Helicopter.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HIDTurret.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_start.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_stop.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Chaos Insurgency Announce.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scp.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
